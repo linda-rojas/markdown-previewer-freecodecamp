@@ -1,11 +1,12 @@
 body {
-    background-color: #edb6a7a2 !important;
+    background-color: #f4f4fafb;
 }
 
 #preview {
     min-height: 400px;
-    background: #f8f9fa;
+    background: rgb(237, 232, 232);
 }
+
 
 #preview img {
     max-width: 360px;
@@ -17,4 +18,89 @@ body {
 #editor {
     min-height: 400px;
     font-family: monospace;
+}
+
+.icon-btn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    z-index: 2;
+    padding: 0.25rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.icon-btn svg {
+    color: #fff;
+}
+
+.card-header.bg-primary,
+.card-header.bg-success {
+    position: relative;
+}
+
+.expanded-section .col-md-6,
+.expanded-section .col-md-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.expanded-section .card {
+    min-height: 500px;
+    border-radius: 0.6rem;
+}
+
+.expanded-section .card-header.bg-primary,
+.expanded-section .card-header.bg-success {
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.expanded-section .card-header.bg-primary {
+    background: #0d6efd;
+}
+
+.expanded-section .card-header.bg-success {
+    background: #2fa26c;
+}
+
+.expanded-section .card-body {
+    background: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.expanded-section #editor,
+.expanded-section #preview {
+    background: #fff;
+    color: #212529;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* Box-shadow para las tarjetas principales */
+.card {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.22), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
+    transition: box-shadow 0.2s;
+}
+
+.expanded-section .card {
+    box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.32), 0 8px 24px 0 rgba(0, 0, 0, 0.22);
+}
+
+.logo-header {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.card.previewer-card,
+.card.previewer-card .card-body {
+    background: rgb(237, 232, 232);
+}
+
+.expanded-section .card.previewer-card,
+.expanded-section .card.previewer-card .card-body {
+    background: rgb(237, 232, 232);
 }
